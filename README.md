@@ -37,16 +37,20 @@ This implementation allows developers to preview their widgets in a catalog-like
 
 - cd to test_widgetbook
 - to run code generator : 
-´´´flutter pub run build_runner build --delete-conflicting-outputs´´´
+´´´
+flutter pub run build_runner build --delete-conflicting-outputs
+´´´
 - To run the Widgetbook app: 
-´´´flutter run -d chrome -t lib/main.dart´´´
+´´´
+flutter run -d chrome -t lib/main.dart
+´´´
 
 
 **Remember** that you can create a Widgetbook entry point in your existing app or create a new independent one.
 
 Directories are a list of folders, components, and use cases. Generator creates the directories variable automatically.
 
-
+´´´
 // single app
 flutter_app
 └─── lib
@@ -67,7 +71,7 @@ flutter_app
 |    |    └─── main.widgetbook.dart
 |    └─── pubspec.yaml
 
-
+´´´
 
 
 ## Docs: 
