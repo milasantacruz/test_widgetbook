@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
+import 'package:test_widgetbook/theme/theme.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
@@ -15,7 +16,7 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: onPressed,
-      child: Text(title),
+      child: Text(title, style:AppTheme.of(context).flexTheme.textTheme.labelLarge),
     );
   }
 }
