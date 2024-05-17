@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
-import 'theme.dart'; // Asegúrate de que la ruta de importación sea correcta.
+import 'package:flex_color_scheme/flex_color_scheme.dart';
 
 class AppThemeData {
-  static ThemeData getLightTheme() => lightTheme();
-  static ThemeData getDarkTheme() => darkTheme();
+  AppThemeData({
+    required this.color,
+    required this.flexTheme,
+  });
+
+  final Color color;
+
+  final ThemeData flexTheme;
 }
